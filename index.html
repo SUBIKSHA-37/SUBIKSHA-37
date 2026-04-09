@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avery Lane | Portfolio</title>
+    <meta
+      name="description"
+      content="A modern personal portfolio website showcasing projects, skills, and contact information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="container nav-bar">
+        <a href="#" class="logo">AL<span>.</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="eyebrow reveal">Creative Developer</p>
+        <h1 class="reveal">
+          Hi, I'm <span>Avery Lane</span>.<br />
+          I design and build delightful digital experiences.
+        </h1>
+        <p class="hero-text reveal">
+          I craft fast, accessible, and visually compelling web products with a focus on clean code and thoughtful user experience.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Let's Talk</a>
+        </div>
+      </section>
+
+      <section id="about" class="container section">
+        <h2>About Me</h2>
+        <p>
+          I'm a full-stack developer with a passion for elegant interfaces and meaningful interactions.
+          Over the last 5+ years, I've worked with startups and agencies to transform ideas into reliable digital products.
+        </p>
+      </section>
+
+      <section id="projects" class="container section">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <a class="mini-link" href="#">See all work →</a>
+        </div>
+        <div class="project-grid">
+          <article class="card reveal">
+            <h3>Nova Commerce</h3>
+            <p>An e-commerce dashboard that boosted order processing speed by 34% through workflow automation.</p>
+            <ul>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Pulse Health</h3>
+            <p>A mobile-first patient portal built for accessibility, reducing appointment no-shows by 22%.</p>
+            <ul>
+              <li>Next.js</li>
+              <li>Tailwind</li>
+              <li>Firebase</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Atlas Insights</h3>
+            <p>Data visualization platform turning complex analytics into actionable business metrics.</p>
+            <ul>
+              <li>Vue</li>
+              <li>D3.js</li>
+              <li>Python API</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="container section">
+        <h2>Core Skills</h2>
+        <div class="skills-wrap">
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>UI/UX</span>
+          <span>Accessibility</span>
+          <span>REST APIs</span>
+          <span>Performance</span>
+        </div>
+      </section>
+
+      <section id="contact" class="container section contact">
+        <h2>Let's Build Something Great</h2>
+        <p>Have an idea or opportunity? I'd love to hear about it.</p>
+        <a class="btn btn-primary" href="mailto:averylane.dev@email.com">Send an Email</a>
+      </section>
+    </main>
+
+    <footer class="container site-footer">
+      <p>© <span id="year"></span> Avery Lane. Crafted with care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
